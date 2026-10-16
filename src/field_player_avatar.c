@@ -1615,17 +1615,18 @@ enum Gender GetPlayerAvatarGenderByGraphicsId(u16 gfxId)
 
 bool8 PartyHasMonWithSurf(void)
 {
-    u8 i;
+    //u8 i;
 
     if (!TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING))
     {
-        for (i = 0; i < PARTY_SIZE; i++)
+        return TRUE
+        /*for (i = 0; i < PARTY_SIZE; i++)
         {
             if (GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES) == SPECIES_NONE)
                 break;
             if (MonKnowsMove(&gParties[B_TRAINER_PLAYER][i], MOVE_SURF))
                 return TRUE;
-        }
+        }*/
     }
     return FALSE;
 }

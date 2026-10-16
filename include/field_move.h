@@ -39,7 +39,7 @@ static inline bool32 SetUpFieldMove(enum FieldMove fieldMove)
 
 static inline bool32 IsFieldMoveUnlocked(enum FieldMove fieldMove)
 {
-    return gFieldMoveUnlocks[gFieldMoveInfo[fieldMove].unlockType].isUnlockedFunc(fieldMove);
+    return TRUE; //gFieldMoveUnlocks[gFieldMoveInfo[fieldMove].unlockType].isUnlockedFunc(fieldMove);
 }
 
 static inline const u8 *FieldMove_GetLockedMessage(enum FieldMove fieldMove)
