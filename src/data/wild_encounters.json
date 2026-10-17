@@ -1250,8 +1250,8 @@
               },
               {
                 "min_level": 10,
-                "max_level": 20,
-                "species": "SPECIES_AZURILL"
+                "max_level": 15,
+                "species": "SPECIES_MUDKIP"
               },
               {
                 "min_level": 30,
